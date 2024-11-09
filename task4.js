@@ -14,6 +14,14 @@ function removeSubstring(str, substr) {
 }
 
 // Приклади використання:
+function removeSubstring (str, substr) {
+  const index = str.indexOf(substr);
+  if (index === -1) {
+    return str;
+  }
+  return str.slice(0, index) + str.slice(index + substr.length);
+}
+
 console.log(removeSubstring('Hello, world!', 'world')) // "Hello, !"
 console.log(removeSubstring('Hello, world!', 'JavaScript')) // "Hello, world!"
 console.log(removeSubstring('Hello, world!', 'Hello')) // ", world!"

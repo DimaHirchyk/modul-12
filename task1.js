@@ -3,6 +3,13 @@
 //  Якщо підрядок не знайдено, функція повинна повертати - 1.
 
 // Приклади використання:
-console.log(findFirstOccurrence('Hello, world!', 'world')) // 7
-console.log(findFirstOccurrence('Hello, world!', 'JavaScript')) // -1
-console.log(findFirstOccurrence('Hello, world!', 'Hello')) // 0
+
+function findFirstOccurrence(str, substr) {
+  return str.indexOf(substr);
+}
+
+console.log(findFirstOccurrence("Hello, world!", "world")); // 7
+console.log(
+  findFirstOccurrence("Hello, world!", "JavaScript")
+); // -1
+console.log(findFirstOccurrence("Hello, world!", "Hello")); // 0

@@ -2,6 +2,10 @@
 //  Функція повинна повертати індекс першого входження підрядка в рядок.
 //  Якщо підрядок не знайдено, функція повинна повертати - 1.
 
+function findFirstOccurrence(str, substr) {
+    return str.indexOf(substr)
+}
+
 // Приклади використання:
 
 function findFirstOccurrence(str, substr) {

@@ -4,7 +4,9 @@
 // і закінчується індексом end(не включаючи його).
 
 function getSubstring(str, start, end) {
+
   return str.slice(start, end);
+
 }
 
 // Приклади використання:

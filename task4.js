@@ -3,6 +3,16 @@
 //   у якому перше входження підрядка буде видалено.Якщо підрядок не знайдено,
 //     функція повинна повертати оригінальний рядок.
 
+function removeSubstring(str, substr) {
+    const index = str.indexOf(substr);
+
+    if (index === -1) {
+        return str;
+    } else {
+        return str.slice(0, index) + str.slice(index + substr.length);
+    }
+}
+
 // Приклади використання:
 function removeSubstring (str, substr) {
   const index = str.indexOf(substr);

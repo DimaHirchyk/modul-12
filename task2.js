@@ -3,6 +3,10 @@
 // Функція повинна повертати підрядок, що починається з індексу start
 // і закінчується індексом end(не включаючи його).
 
+function getSubstring(str, start, end) {
+  return str.slice(start, end);
+}
+
 // Приклади використання:
 console.log(getSubstring('Hello, world!', 7, 12)) // "world"
 console.log(getSubstring('JavaScript', 4, 10)) // "Script"
